@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio de Cesia</title>
-    <link rel="stylesheet" href="Estilo.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Cesia</title>
+    <link rel="stylesheet" href="Estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1 id="title">Mi portafolio</h1>
-    </header>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#" onclick="showSection('inicio')"><i class="fas fa-home"></i> <span id="nav-home">Inicio</span></a></li>
-            <li><a href="#" onclick="showSection('sobre-mi')"><i class="fas fa-user"></i> <span id="nav-about">Sobre mí</span></a></li>
-            <li><a href="#" onclick="showSection('habilidades')"><i class="fas fa-lightbulb"></i> <span id="nav-skills">Mis Habilidades</span></a></li>
-            <li><a href="#" onclick="showSection('linkedin')"><i class="fab fa-linkedin"></i> <span id="nav-linkedin">LinkedIn</span></a></li>
-            <li><a href="#" onclick="showSection('curriculum')"><i class="fas fa-file-alt"></i> <span id="nav-cv">Currículum</span></a></li>
-        </ul>
-    </nav>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('inicio')"><i class="fas fa-home"></i> <span id="nav-home">Inicio</span></a></li>
+            <li><a href="#" onclick="showSection('sobre-mi')"><i class="fas fa-user"></i> <span id="nav-about">Sobre mí</span></a></li>
+            <li><a href="#" onclick="showSection('habilidades')"><i class="fas fa-lightbulb"></i> <span id="nav-skills">Mis Habilidades</span></a></li>
+            <li><a href="#" onclick="showSection('linkedin')"><i class="fab fa-linkedin"></i> <span id="nav-linkedin">LinkedIn</span></a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section id="inicio" class="section active">
-    <div class="card">
-        <h2 id="home-title">Inicio</h2>
-        <img src="cesia.jpg" alt="Foto de Cesia" />
-        <p id="home-text">
-            Hola soy Cesia Damaris Arévalo Romero, estudiante de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Apasionada por la tecnología y el mantenimiento de computadoras y siempre busco aprender para mejorar el uso de la tecnología.
-        </p>
-    </div>
-</section>
+    <main>
+        <section id="inicio" class="section active">
+            <div class="card">
+                <img src="cesia.jpg" alt="Foto de Cesia" />
+                <p id="home-text">
+                    Hola soy Cesia Damaris Arévalo Romero, estudiante de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Apasionada por la tecnología y el mantenimiento de computadoras y siempre busco aprender para mejorar el uso de la tecnología.
+                </p>
+            </div>
+        </section>
 
-        <section id="sobre-mi" class="section">
-            <div class="card">
-                <h2 id="about-title">Sobre mí</h2>
-                <p id="about-text">
-                    Soy estudiante de la carrera de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Me apasiona la tecnología y el aprendizaje continuo, con especial interés en el mantenimiento de computadoras, siempre buscando aprender y aportar soluciones prácticas e innovadoras.
-                </p>
-            </div>
-        </section>
+        <section id="sobre-mi" class="section">
+            <div class="card">
+                <h2 id="about-title">Sobre mí</h2>
+                <p id="about-text">
+                    Soy estudiante de la carrera de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Me apasiona la tecnología y el aprendizaje continuo, con especial interés en el mantenimiento de computadoras, siempre buscando aprender y aportar soluciones prácticas e innovadoras.
+                </p>
+                <a href="Curriculum.pdf" download class="cv-button" id="download-cv-btn">
+                    <i class="fas fa-download"></i> <span id="btn-cv-text">Descargar CV</span>
+                </a>
+            </div>
+        </section>
 
-        <section id="habilidades" class="section">
-            <div class="card">
-                <h2 id="skills-title">Mis Habilidades</h2>
+                <div id="habilidades-continuas">
+            <div class="card">
+                <h2 id="skills-title-cont">Mis Habilidades</h2>
 
-                <h3 id="hard-skills-title">💻 Habilidades Duras</h3>
-                <ul class="skills-list">
-                    <li id="skill-hardware"><i class="fas fa-tools"></i> Hardware y mantenimiento</li>
-                    <li id="skill-software"><i class="fas fa-laptop-code"></i> Software y sistemas</li>
-                </ul>
+                <h3 id="hard-skills-title-cont">💻 Habilidades Duras</h3>
+                <ul class="skills-list hard-skills-row"> 
+                    <li id="skill-hardware-cont"><i class="fas fa-tools"></i> Hardware y mantenimiento</li>
+                    <li id="skill-software-cont"><i class="fas fa-laptop-code"></i> Software y sistemas</li>
+                </ul>
 
-                <h3 id="soft-skills-title">🤝 Habilidades Blandas</h3>
-                <ul class="skills-list">
-                    <li id="skill-communication"><i class="fas fa-comments"></i> Comunicación</li>
-                    <li id="skill-teamwork"><i class="fas fa-users"></i> Trabajo en equipo</li>
-                    <li id="skill-problemsolving"><i class="fas fa-lightbulb"></i> Resolución de problemas</li>
-                </ul>
+                <h3 id="soft-skills-title-cont">🤝 Habilidades Blandas</h3>
+                <ul class="skills-list">
+                    <li id="skill-communication-cont"><i class="fas fa-comments"></i> Comunicación</li>
+                    <li id="skill-teamwork-cont"><i class="fas fa-users"></i> Trabajo en equipo</li>
+                    <li id="skill-problemsolving-cont"><i class="fas fa-lightbulb"></i> Resolución de problemas</li>
+                </ul>
 
-                <h3 id="values-title">🌟 Valores Profesionales</h3>
-                <ul class="skills-list">
-                    <li id="value-responsibility"><i class="fas fa-check-circle"></i> Responsabilidad</li>
-                    <li id="value-honesty"><i class="fas fa-handshake"></i> Honestidad</li>
-                    <li id="value-commitment"><i class="fas fa-user-shield"></i> Compromiso</li>
-                    <li id="value-respect"><i class="fas fa-heart"></i> Respeto</li>
-                </ul>
-            </div>
-        </section>
+                <h3 id="values-title-cont">🌟 Valores Profesionales</h3>
+                <ul class="skills-list">
+                    <li id="value-responsibility-cont"><i class="fas fa-check-circle"></i> Responsabilidad</li>
+                    <li id="value-honesty-cont"><i class="fas fa-handshake"></i> Honestidad</li>
+                    <li id="value-commitment-cont"><i class="fas fa-user-shield"></i> Compromiso</li>
+                    <li id="value-respect-cont"><i class="fas fa-heart"></i> Respeto</li>
+                </ul>
+            </div>
+        </div>
+                <section id="linkedin" class="section">
+            <div class="card">
+                <h2 id="linkedin-title">LinkedIn</h2>
+                <p id="linkedin-text">Visita mi perfil profesional:</p>
+                <a href="https://www.linkedin.com/in/cesia-ar%C3%A9valo-3a0128382/" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </section>
 
-        <section id="linkedin" class="section">
-            <div class="card">
-                <h2 id="linkedin-title">LinkedIn</h2>
-                <p id="linkedin-text">Visita mi perfil profesional:</p>
-                <a href="https://www.linkedin.com/in/cesia-ar%C3%A9valo-3a0128382/" target="_blank">🔗 LinkedIn</a>
-            </div>
-        </section>
+                <section id="habilidades" class="section">
+            <div style="height: 10px;"></div>
+        </section>
+    </main>
 
-        <section id="curriculum" class="section">
-            <div class="card">
-                <h2 id="cv-title">Currículum</h2>
-                <p id="cv-text">Ver currículum aquí:</p>
-                <a href="Curriculum.pdf" download>📄 Ver y descargar CV</a>
-            </div>
-        </section>
-    </main>
+    <button id="lang-btn" onclick="toggleLanguage()">🌐</button>
 
-    <button id="lang-btn" onclick="toggleLanguage()">🌐</button>
-
-    <script src="portafolio.js"></script>
+    <script src="portafolio.js"></script>
 </body>
 </html>
