@@ -18,14 +18,31 @@ p {
 
 nav {
     background: #0D1B2A;
-    position: fixed;
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
+    
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 5%; 
+    min-height: 50px; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px; 
+    width: auto;
+    border-radius: 5px; 
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 auto; 
     padding: 0;
     list-style: none;
     display: flex;
@@ -50,13 +67,13 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
-.section {
-    display: none;
-    padding: 2rem;
+main {
+    padding-top: 80px; 
 }
 
-.section.active {
-    display: block;
+
+.section {
+    padding: 2rem;
 }
 
 .card {
@@ -172,14 +189,9 @@ nav ul li a:hover {
 
 .hard-skills-row {
     display: flex;
-    
     justify-content: center;
-    
     flex-wrap: wrap; 
-    
     margin: 2rem auto;
-    
     max-width: 100%; 
-    
     gap: 1.5rem; 
 }
