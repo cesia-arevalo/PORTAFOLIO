@@ -195,3 +195,46 @@ main {
     max-width: 100%; 
     gap: 1.5rem; 
 }
+
+#sobre-mi .card h2 {
+    color: #4CAF50; 
+}
+
+#habilidades .card h2 {
+    color: #4CAF50; 
+}
+
+#linkedin .card h2 {
+    color: #4CAF50;
+}
+
+#sobre-mi .card h2, 
+#habilidades .card h2,
+#linkedin .card h2 {
+    color: #4CAF50; 
+}
+
+#habilidades .card h3 {
+    color: #4CAF50; 
+}
+
+
+.brand-name {
+    color: #4CAF50; 
+    font-size: 2.5rem; 
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.brand-slogan {
+    color: #FFFFFF; 
+    font-size: 1.3rem; 
+    font-weight: 500;
+    margin-bottom: 2rem; 
+}
+
+h1, h2, h3 {
+    color: #FFFFFF; 
+    margin-bottom: 0.5rem;
+}
