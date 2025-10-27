@@ -5,6 +5,7 @@ body {
     background-color: #0D1B2A;
     color: #FFFFFF;
     line-height: 1.6;
+    /* Comportamiento de scroll vertical normal de la página */
 }
 
 h1, h2, h3 {
@@ -16,6 +17,7 @@ p {
     margin-bottom: 1rem;
 }
 
+/* --- NAVIGACIÓN --- */
 nav {
     background: #0D1B2A;
     position: fixed; 
@@ -67,18 +69,26 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
+/* --- ESTRUCTURA PRINCIPAL --- */
 main {
     padding-top: 80px; 
 }
 
-
 .section {
     padding: 2rem;
+    /* CAMBIO CLAVE: Eliminar display: none; para que todas las secciones sean visibles */
+    /* NO TOCAR AQUÍ SI QUIERES QUE TODAS SE VEAN */
 }
 
+.section.active {
+    /* CAMBIO CLAVE: Eliminar display: block; ya que todas deben estar visibles */
+    /* NO TOCAR AQUÍ SI QUIERES QUE TODAS SE VEAN */
+}
+
+/* --- CARD GENERAL (Tarjeta base) --- */
 .card {
     background: transparent;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #E0E0E0; 
     padding: 2rem;
     max-width: 900px;
     margin: 2rem auto;
@@ -86,30 +96,58 @@ main {
     text-align: center;
 }
 
+/* --- ESTILOS DE INICIO/SOBRE MÍ --- */
 .card img {
     max-width: 200px;
-    border-radius: 50%;
+    border-radius: 50%; 
     margin: 1rem 0;
     border: 3px solid #4CAF50;
 }
 
-#lang-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #4CAF50;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    padding: 0.8rem 1rem;
-    cursor: pointer;
-    font-size: 1.2rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
+.brand-name {
+    color: #4CAF50; 
+    font-size: 2.5rem; 
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-#lang-btn:hover {
-    transform: scale(1.1);
+.brand-slogan {
+    color: #FFFFFF; 
+    font-size: 1.3rem; 
+    font-weight: 500;
+    margin-bottom: 2rem; 
+}
+
+/* --- BOTÓN CV --- */
+.cv-button {
+    display: inline-block;
+    background: #4CAF50; 
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    margin-top: 1.5rem; 
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cv-button:hover {
+    background: #4CAF50; 
+    transform: translateY(-2px);
+}
+
+.cv-button i {
+    margin-right: 0.5rem;
+}
+
+/* --- ESTILOS DE HABILIDADES --- */
+#habilidades .card h3,
+#habilidades .card h2,
+#sobre-mi .card h2,
+#proyectos .card h2 {
+    color: #4CAF50; 
 }
 
 .skills-list {
@@ -127,7 +165,6 @@ main {
     background: #0D1B2A; 
     border: 2px solid #FFFFFF; 
     color: #FFFFFF; 
-
     border-radius: 12px;
     padding: 1.5rem; 
     font-size: 1.1rem; 
@@ -157,36 +194,6 @@ main {
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1); 
 } 
 
-.cv-button {
-    display: inline-block;
-    background: #4CAF50; 
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.8rem 2.5rem;
-    border-radius: 30px;
-    margin-top: 1.5rem; 
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.cv-button:hover {
-    background: #4CAF50; 
-    transform: translateY(-2px);
-}
-
-.cv-button i {
-    margin-right: 0.5rem;
-}
-
-#habilidades-continuas {
-    padding: 2rem; 
-}
-
-#habilidades-continuas .card {
-    margin-top: 0;
-}
-
 .hard-skills-row {
     display: flex;
     justify-content: center;
@@ -196,45 +203,122 @@ main {
     gap: 1.5rem; 
 }
 
-#sobre-mi .card h2 {
+/* --- BOTÓN DE IDIOMA --- */
+#lang-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+#lang-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* ====================================================== */
+/* --- ESTILOS DE PROYECTOS (SCROLL HORIZONTAL) --- */
+/* ====================================================== */
+
+/* Contenedor general de la cuadrícula de proyectos */
+.projects-grid {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 30px; 
+    padding: 20px; 
+    overflow-x: auto; /* Scroll horizontal solo para proyectos */
+    justify-content: flex-start; 
+    padding-bottom: 30px; 
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.project-item {
+    background-color: #172A3A; 
+    border: 1px solid #4A6A8C; 
+    border-radius: 8px; 
+    padding: 20px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; 
+    
+    /* Ancho fijo para el scroll horizontal */
+    flex: 0 0 300px; 
+    min-width: 300px;
+}
+
+.project-item:hover {
+    transform: translateY(-5px); 
+    border-color: #4CAF50; 
+}
+
+/* Estilo para las imágenes de los proyectos (FORMA CUADRADA) */
+.project-image {
+    width: 100%; 
+    max-width: 250px; 
+    height: 250px; 
+    object-fit: contain; 
+    background-color: #FFFFFF; 
+    padding: 5px; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50; 
+}
+
+/* Estilos para el nombre del proyecto */
+.project-name {
     color: #4CAF50; 
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-#habilidades .card h2 {
+/* Estilos para los detalles y etiquetas (alineación a la izquierda dentro de la tarjeta) */
+.project-details {
+    text-align: left;
+}
+
+.project-details p {
+    color: #cccccc; 
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.project-details strong {
+    color: #ffffff; 
+    font-weight: 600;
+}
+
+/* Estilos para las etiquetas de tecnología */
+.project-tech-tags {
+    margin-top: 15px;
+    text-align: left; 
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #0D1B2A; 
     color: #4CAF50; 
-}
-
-#linkedin .card h2 {
-    color: #4CAF50;
-}
-
-#sobre-mi .card h2, 
-#habilidades .card h2,
-#linkedin .card h2 {
-    color: #4CAF50; 
-}
-
-#habilidades .card h3 {
-    color: #4CAF50; 
-}
-
-
-.brand-name {
-    color: #4CAF50; 
-    font-size: 2.5rem; 
-    font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.brand-slogan {
-    color: #FFFFFF; 
-    font-size: 1.3rem; 
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-right: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
-    margin-bottom: 2rem; 
+    white-space: nowrap; 
 }
 
-h1, h2, h3 {
-    color: #FFFFFF; 
-    margin-bottom: 0.5rem;
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .project-item {
+        min-width: 280px; 
+    }
 }
