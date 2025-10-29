@@ -1,4 +1,3 @@
-
 let isSpanish = true;
 
 function toggleLanguage() {
@@ -103,7 +102,8 @@ function toggleLanguage() {
         
         if (projectCompu1Name) projectCompu1Name.textContent = "Software for Divino Niño Pharmacy"; 
         if (projectCompu1DescTitle) projectCompu1DescTitle.textContent = "Description:";
-        if (projectCompu1DescText) projectCompu1DescText.textContent = "Creation of custom software for the company that automates and optimizes some of the tasks carried out by the pharmacy.";
+        if (projectCompu1DescText) projectCompu1DescText.textContent = "Custom software for the company that automates and optimizes some of the tasks carried out by the Divino Niño Pharmacy.";
+
         if (projectCompu1RoleTitle) projectCompu1RoleTitle.textContent = "Role:";
         if (projectCompu1RoleText) projectCompu1RoleText.textContent = "Designer and Documenter.";
         if (projectCompu1TechTitle) projectCompu1TechTitle.textContent = "Technologies used:";
@@ -120,7 +120,7 @@ function toggleLanguage() {
         
         
         
-        if (nameBrand) nameBrand.textContent = 'Cesia Damaris Arévalo Romero';
+        if (nameBrand) nameBrand.textContent = 'Cesia Arévalo';
         if (sloganBrand) sloganBrand.textContent = '“Soluciones que inspiran confianza.”';
 
         if (navHome) navHome.textContent = "Inicio";
@@ -159,7 +159,7 @@ function toggleLanguage() {
         
         if (projectCompu1Name) projectCompu1Name.textContent = "Software a farmacia Divino Niño";
         if (projectCompu1DescTitle) projectCompu1DescTitle.textContent = "Descripción:";
-        if (projectCompu1DescText) projectCompu1DescText.textContent = "creación de un software a la medida de la empresa que automatice y optimice algunas tareas que lleva a cabo la farmacia.";
+        if (projectCompu1DescText) projectCompu1DescText.textContent = "Software a la medida para la empresa que automatice y optimice algunas tareas que lleva a cabo la farmacia.";
         if (projectCompu1RoleTitle) projectCompu1RoleTitle.textContent = "Rol:";
         if (projectCompu1RoleText) projectCompu1RoleText.textContent = "Diseñadora y Documentadora.";
         if (projectCompu1TechTitle) projectCompu1TechTitle.textContent = "Tecnologías usadas:";

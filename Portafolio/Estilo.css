@@ -28,8 +28,9 @@ nav {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    padding: 0.5rem 5%; 
-    min-height: 50px; 
+    padding: 15px 30px; 
+    min-height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo-container {
@@ -224,7 +225,7 @@ main {
 }
 
 
-/* --- ESTILOS DE PROYECTOS --- */
+
 .projects-grid {
     display: flex; 
     flex-wrap: nowrap; 
@@ -256,14 +257,14 @@ main {
 }
 
 
-/* 🚀 ÚLTIMA CORRECCIÓN: Eliminamos el padding para que la imagen abarque todo el fondo blanco. */
+
 .project-image {
     width: 100%; 
     max-width: 250px; 
     height: 180px; 
     background-color: #FFFFFF; 
-    /* 💥 CAMBIO CLAVE: Eliminamos el padding para que la imagen llene los bordes del fondo blanco */
-    /* padding: 5px; */ 
+    
+     
     
     border-radius: 0 !important; 
     object-fit: fill; 
@@ -272,7 +273,7 @@ main {
     border: 2px solid #4CAF50; 
 }
 
-/* 🔄 Ajuste adicional para la imagen dentro del contenedor (se mantiene) */
+
 .project-item img {
     object-fit: fill; 
     border-radius: 0 !important;
@@ -328,3 +329,36 @@ main {
         min-width: 280px; 
     }
 }
+
+
+
+footer {
+    background-color: #0D1B2A; 
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    
+    border-top: 1px solid #ffffff; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+.social-links-footer {
+    display: flex;
+    justify-content: center; 
+    gap: 25px; 
+}
+
+
+.social-links-footer a {
+    color: #ffffff; 
+    font-size: 2.2rem;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+
+.social-links-footer a:hover {
+    color: #4CAF50; 
+    transform: scale(1.1);
+}
+

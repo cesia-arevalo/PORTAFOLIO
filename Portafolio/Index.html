@@ -6,7 +6,11 @@
     <title>Portafolio de Cesia</title>
     <link rel="stylesheet" href="Estilo.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    
+
+By replacing the script with the link CSS, you activate la librería Font Awesome de manera más confiable, lo que debería resolver el problema de los logos.
 </head>
 <body>
     
@@ -26,7 +30,7 @@
         <section id="inicio" class="section active">
             <div class="card">
                 <img src="cesia.jpg" alt="Foto de Cesia" />
-                <h1 class="brand-name" id="name-brand">Cesia Damaris Arévalo Romero</h1>
+                <h1 class="brand-name" id="name-brand">Cesia Arévalo</h1>
                 <h2 class="brand-slogan" id="slogan-brand">“Soluciones que inspiran confianza.”</h2>
                 <p id="home-text">
                     Hola soy Cesia Damaris Arévalo Romero, estudiante de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Apasionada por la tecnología y el mantenimiento de computadoras y siempre busco aprender para mejorar el uso de la tecnología.
@@ -40,7 +44,7 @@
                 <p id="about-text">
                     Soy estudiante de la carrera de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Me apasiona la tecnología y el aprendizaje continuo, con especial interés en el mantenimiento de computadoras, siempre buscando aprender y aportar soluciones prácticas e innovadoras.
                 </p>
-                <a href="Curriculum.pdf" download class="cv-button" id="download-cv-btn">
+                <a href="Curriculum Vitae.pdf" download class="cv-button" id="download-cv-btn">
                     <i class="fas fa-download"></i> <span id="btn-cv-text">Descargar CV</span>
                 </a>
             </div>
@@ -86,7 +90,7 @@
                         <div class="project-details">
                             <p class="project-description">
                                 <strong id="project-compu1-desc-title">Descripción:</strong>
-                                <span id="project-compu1-desc-text">creación de un software a la medida de la empresa que automatice y optimice algunas tareas que lleva a cabo la farmacia.</span>
+                                <span id="project-compu1-desc-text">Software a la medida para la empresa que automatice y optimice algunas tareas que lleva a cabo la farmacia.</span>
                             </p>
                             <p class="project-role">
                                 <strong id="project-compu1-role-title">Rol:</strong>
@@ -133,6 +137,17 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="social-links-footer">
+            <a href="https://github.com/cesia-arevalo" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/cesia-ar%C3%A9valo-3a0128382/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
 
     <button id="lang-btn" onclick="toggleLanguage()">🌐</button>
     <script src="portafolio.js"></script>
