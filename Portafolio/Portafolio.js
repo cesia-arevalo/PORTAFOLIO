@@ -1,5 +1,31 @@
 let isSpanish = true;
 
+const projectCompu1Name = document.getElementById('project-compu1-name');
+const projectCompu1DescTitle = document.getElementById('project-compu1-desc-title');
+const projectCompu1DescText = document.getElementById('project-compu1-desc-text');
+const projectCompu1RoleTitle = document.getElementById('project-compu1-role-title');
+const projectCompu1RoleText = document.getElementById('project-compu1-role-text');
+const projectCompu1TechTitle = document.getElementById('project-compu1-tech-title');
+
+const projectCase1Name = document.getElementById('project-case1-name');
+const projectCase1DescTitle = document.getElementById('project-case1-desc-title');
+const projectCase1DescText = document.getElementById('project-case1-desc-text');
+const projectCase1RoleTitle = document.getElementById('project-case1-role-title');
+const projectCase1RoleText = document.getElementById('project-case1-role-text');
+const projectCase1TechTitle = document.getElementById('project-case1-tech-title');
+
+const projectBookmoodName = document.getElementById('project-bookmood-name');
+const projectBookmoodDescTitle = document.getElementById('project-bookmood-desc-title');
+const projectBookmoodDescText = document.getElementById('project-bookmood-desc-text');
+const projectBookmoodRoleTitle = document.getElementById('project-bookmood-role-title');
+const projectBookmoodRoleText = document.getElementById('project-bookmood-role-text');
+const projectBookmoodTechTitle = document.getElementById('project-bookmood-tech-title');
+
+const projectBookmoodTechVSCode = document.getElementById('project-bookmood-tech-visual studio code');
+const projectBookmoodTechJS = document.getElementById('project-bookmood-tech-javascript'); // Corregido el ID aquí
+const projectBookmoodTechHTML = document.getElementById('project-bookmood-tech-html');
+const projectBookmoodTechCSS = document.getElementById('project-bookmood-tech-css');
+    
 function toggleLanguage() {
     
     
@@ -42,23 +68,6 @@ function toggleLanguage() {
     
     const projectsTitle = document.getElementById('projects-title');
     
-    
-    const projectCompu1Name = document.getElementById('project-compu1-name');
-    const projectCompu1DescTitle = document.getElementById('project-compu1-desc-title');
-    const projectCompu1DescText = document.getElementById('project-compu1-desc-text');
-    const projectCompu1RoleTitle = document.getElementById('project-compu1-role-title');
-    const projectCompu1RoleText = document.getElementById('project-compu1-role-text');
-    const projectCompu1TechTitle = document.getElementById('project-compu1-tech-title');
-
-    
-    const projectCase1Name = document.getElementById('project-case1-name');
-    const projectCase1DescTitle = document.getElementById('project-case1-desc-title');
-    const projectCase1DescText = document.getElementById('project-case1-desc-text');
-    const projectCase1RoleTitle = document.getElementById('project-case1-role-title');
-    const projectCase1RoleText = document.getElementById('project-case1-role-text');
-    const projectCase1TechTitle = document.getElementById('project-case1-tech-title');
-    
-
     if (!isSpanish) {
         
         
@@ -116,6 +125,18 @@ function toggleLanguage() {
         if (projectCase1RoleText) projectCase1RoleText.textContent = "Designer.";
         if (projectCase1TechTitle) projectCase1TechTitle.textContent = "Technologies used:";
 
+        if (projectBookmoodName) projectBookmoodName.textContent = "BOOKMOOD"; 
+        if (projectBookmoodDescTitle) projectBookmoodDescTitle.textContent = "Description:";
+        if (projectBookmoodDescText) projectBookmoodDescText.textContent = "BookMood is an e-commerce website designed and created to allow users to quickly, reliably, and personally search for, purchase, and receive books. It offers a simple, secure, and engaging shopping experience.";
+        if (projectBookmoodRoleTitle) projectBookmoodRoleTitle.textContent = "Role:";
+        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = "Scrum Master and Front end.";
+        if (projectBookmoodTechTitle) projectBookmoodTechTitle.textContent = "Technologies used:";
+
+        if (projectBookmoodTechVSCode) projectBookmoodTechVSCode.textContent = "Visual Studio Code";
+        if (projectBookmoodTechJS) projectBookmoodTechJS.textContent = "JavaScript"; // Corregido a JavaScript
+        if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
+        if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
+
     } else {
         
         
@@ -171,6 +192,18 @@ function toggleLanguage() {
         if (projectCase1RoleTitle) projectCase1RoleTitle.textContent = "Rol:";
         if (projectCase1RoleText) projectCase1RoleText.textContent = "Diseñadora.";
         if (projectCase1TechTitle) projectCase1TechTitle.textContent = "Tecnologías usadas:";
+
+        if (projectBookmoodName) projectBookmoodName.textContent = "BOOKMOOD";
+        if (projectBookmoodDescTitle) projectBookmoodDescTitle.textContent = "Descripción:";
+        if (projectBookmoodDescText) projectBookmoodDescText.textContent = "BookMood es un sitio web de comercio electrónico (e-commerce) diseñado y creado para que los usuarios puedan buscar, comprar y recibir libros de manera rápida, confiable y personalizada. Ofrece una experiencia de compra sencilla, segura y atractiva.";
+        if (projectBookmoodRoleTitle) projectBookmoodRoleTitle.textContent = "Rol:";
+        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = "Scrum Master y Front end.";
+        if (projectBookmoodTechTitle) projectBookmoodTechTitle.textContent = "Tecnologías usadas:";
+
+        if (projectBookmoodTechVSCode) projectBookmoodTechVSCode.textContent = "Visual Studio Code";
+        if (projectBookmoodTechJS) projectBookmoodTechJS.textContent = "JavaScript";
+        if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
+        if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
     }
 }
 
