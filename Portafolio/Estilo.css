@@ -440,5 +440,14 @@ footer {
 .submit-button:hover {
     transform: translateY(-2px);
     background:#4CAF50;
+
+    /* --- ESTILO PARA DERECHOS RESERVADOS --- */
+.copyright {
+    color: #FFFFFF; /* Texto blanco para que se vea sobre el fondo oscuro */
+    font-size: 0.9rem; /* Un poco más pequeño que el texto normal */
+    text-align: center; /* Centrar el texto */
+    padding-top: 1rem; /* Espacio arriba para separarlo de los iconos */
+    margin: 0; /* Eliminar margen predeterminado */
+}
 }
 

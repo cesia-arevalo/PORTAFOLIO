@@ -32,6 +32,8 @@ const labelName = document.getElementById('label-name');
 const labelEmail = document.getElementById('label-email');
 const labelMessage = document.getElementById('label-message');
 const btnSubmit = document.getElementById('btn-submit');
+
+const copyrightText = document.getElementById('copyright-text');
     
 function toggleLanguage() {
     
@@ -79,7 +81,7 @@ function toggleLanguage() {
         
         
         
-        if (nameBrand) nameBrand.textContent = 'Cesia Damaris Arévalo Romero';
+        if (nameBrand) nameBrand.textContent = 'Cesia Arévalo';
         if (sloganBrand) sloganBrand.textContent = '“Solutions that inspire confidence.”';
 
         if (navHome) navHome.textContent = "Home";
@@ -144,11 +146,13 @@ function toggleLanguage() {
         if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
         if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
 
-        if (contactTitle) contactTitle.textContent = "Contact Me";
+        if (contactTitle) contactTitle.textContent = "Contact";
         if (labelName) labelName.textContent = "Name";
         if (labelEmail) labelEmail.textContent = "Email";
         if (labelMessage) labelMessage.textContent = "Message";
         if (btnSubmit) btnSubmit.textContent = "Send Message";
+
+        if (copyrightText) copyrightText.textContent = "© 2025 Cesia Arévalo. All rights reserved.";
 
     } else {
         
@@ -218,11 +222,13 @@ function toggleLanguage() {
         if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
         if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
 
-        if (contactTitle) contactTitle.textContent = "Contáctame";
+        if (contactTitle) contactTitle.textContent = "Contacto";
         if (labelName) labelName.textContent = "Nombre";
         if (labelEmail) labelEmail.textContent = "Correo Electrónico";
         if (labelMessage) labelMessage.textContent = "Mensaje";
         if (btnSubmit) btnSubmit.textContent = "Enviar Mensaje";
+
+        if (copyrightText) copyrightText.textContent = "© 2025 Cesia Arévalo. Todos los derechos reservados.";
     }
 }
 
