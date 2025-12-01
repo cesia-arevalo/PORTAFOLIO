@@ -25,6 +25,13 @@ const projectBookmoodTechVSCode = document.getElementById('project-bookmood-tech
 const projectBookmoodTechJS = document.getElementById('project-bookmood-tech-javascript'); // Corregido el ID aquí
 const projectBookmoodTechHTML = document.getElementById('project-bookmood-tech-html');
 const projectBookmoodTechCSS = document.getElementById('project-bookmood-tech-css');
+
+const navContact = document.getElementById("nav-contact");
+const contactTitle = document.getElementById('contact-title');
+const labelName = document.getElementById('label-name');
+const labelEmail = document.getElementById('label-email');
+const labelMessage = document.getElementById('label-message');
+const btnSubmit = document.getElementById('btn-submit');
     
 function toggleLanguage() {
     
@@ -137,6 +144,12 @@ function toggleLanguage() {
         if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
         if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
 
+        if (contactTitle) contactTitle.textContent = "Contact Me";
+        if (labelName) labelName.textContent = "Name";
+        if (labelEmail) labelEmail.textContent = "Email";
+        if (labelMessage) labelMessage.textContent = "Message";
+        if (btnSubmit) btnSubmit.textContent = "Send Message";
+
     } else {
         
         
@@ -204,6 +217,12 @@ function toggleLanguage() {
         if (projectBookmoodTechJS) projectBookmoodTechJS.textContent = "JavaScript";
         if (projectBookmoodTechHTML) projectBookmoodTechHTML.textContent = "HTML";
         if (projectBookmoodTechCSS) projectBookmoodTechCSS.textContent = "CSS";
+
+        if (contactTitle) contactTitle.textContent = "Contáctame";
+        if (labelName) labelName.textContent = "Nombre";
+        if (labelEmail) labelEmail.textContent = "Correo Electrónico";
+        if (labelMessage) labelMessage.textContent = "Mensaje";
+        if (btnSubmit) btnSubmit.textContent = "Enviar Mensaje";
     }
 }
 

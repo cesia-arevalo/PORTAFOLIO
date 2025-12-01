@@ -362,3 +362,83 @@ footer {
     transform: scale(1.1);
 }
 
+#contacto .card {
+    /* Fondo que coincide con las tarjetas de proyecto */
+    background-color: #0D1B2A; 
+    padding: 3rem 2rem;
+    /* Borde que coincide con las tarjetas de proyecto */
+    border: 1px solid #ffffff; 
+    /* Borde redondeado que coincide con las tarjetas de proyecto */
+    border-radius: 8px; 
+    /* Sombra que coincide con las tarjetas de proyecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4CAF50; /* Color principal de tu portafolio */
+    text-align: center;
+    margin-bottom: 2rem;
+    /* Mantenemos el efecto de brillo para el título */
+    text-shadow: 0 0 10px #4CAF50(76, 175, 80, 0.8);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: -0.5rem; /* Ajuste de espacio */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    /* Mantenemos un borde y color consistente con los campos anteriores */
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #FFFFFF; 
+    color: #000000;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease;
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.submit-button {
+    /* Botón verde y azulado */
+    background:#4CAF50; 
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    background:#4CAF50;
+}
+
