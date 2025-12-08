@@ -450,4 +450,155 @@ footer {
     margin: 0; /* Eliminar margen predeterminado */
 }
 }
+/* --- ESTILO PARA RECONOCIMIENTOS --- */
 
+.recognition-card {
+    /* Usa el estilo base de .card: border: 1px solid #E0E0E0; background: transparent; */
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-top: 3rem; /* Espacio de la tarjeta "Sobre mí" */
+}
+
+#recognition-title {
+    /* Título verde (coherente con #sobre-mi .card h2) */
+    color: #4CAF50; 
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.recognition-grid {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 20px 0;
+}
+
+.recognition-item {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    /* Fondo oscuro: Coherente con project-item */
+    background-color: #172A3A; 
+    /* Borde sutil: Coherente con project-item */
+    border: 1px solid #4A6A8C;
+    border-radius: 8px;
+    padding: 0;
+    width: 250px; 
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.recognition-item:hover {
+    transform: translateY(-5px);
+    /* Borde verde al pasar el ratón: Coherente con project-item:hover */
+    border-color: #4CAF50;
+}
+
+/* --- ESTILO PARA RECONOCIMIENTOS (En Estilo.css) --- */
+
+.recognition-img {
+    width: 100%;
+    height: 180px; /* Altura rectangular estándar (igual a tus proyectos) */
+    max-height: 180px; 
+    
+    /* 1. Rellena el espacio rectangular al 100% de la caja: */
+    object-fit: fill; 
+    
+    /* 2. Anula cualquier redondeo heredado de otras reglas CSS: */
+    border-radius: 0 !important; 
+    
+    border: 2px solid #4CAF50;
+    margin-bottom: 0;
+}
+
+.recognition-item p {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+    color: #ffffff;
+}
+
+.projects-grid {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 30px; 
+    padding: 20px; 
+    overflow-x: auto; 
+    justify-content: flex-start; 
+    padding-bottom: 30px; 
+}
+
+
+.project-item {
+    background-color: #172A3A; 
+    border: 1px solid #4A6A8C; 
+    border-radius: 8px; 
+    padding: 20px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; 
+    
+    /* 🛠️ CORRECCIÓN CLAVE: Habilitar Flexbox en la tarjeta */
+    display: flex;
+    flex-direction: column;
+    
+    flex: 0 0 300px; 
+    min-width: 300px;
+}
+
+.project-item:hover {
+    transform: translateY(-5px); 
+    border-color: #4CAF50; 
+}
+
+/* ... (Otras clases como .project-image, .project-name, etc.) ... */
+
+
+.project-details {
+    text-align: left;
+    /* 🛠️ CORRECCIÓN CLAVE: Asegura que .project-details tome todo el espacio restante 
+    y empuje .project-links al fondo */
+    flex-grow: 1;
+    /* Opcional: Esto ayuda a que el contenido interno de project-details se distribuya 
+    mejor si tuviera mucha altura */
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ESTILO PARA ENLACES DE GITHUB EN PROYECTOS */
+
+.project-links {
+    /* 🔑 Pega el contenedor al fondo (funciona gracias al flex-grow: 1 anterior) */
+    margin-top: auto; 
+    text-align: center; /* ESTO CENTRA EL ÍCONO HORIZONTALMENTE */
+    padding-top: 15px; /* Espacio visual arriba del ícono */
+}
+
+.github-link {
+    display: inline-block;
+    color: #ffffff; 
+    font-size: 2.5rem; 
+    
+    /* 🚨 SOLUCIÓN PARA ELIMINAR LÍNEAS AZULES/BORDES */
+    border: none !important; 
+    text-decoration: none !important;
+    outline: none !important; /* CLAVE: Elimina el borde azul al enfocar/clic */
+    box-shadow: none !important;
+    
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.github-link:hover {
+    color: #4CAF50; 
+    transform: scale(1.1); 
+}
+
+/* Regla adicional para asegurar que el ícono <i> no tenga estilos de borde residuales */
+.github-link i {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    margin: 0;
+}

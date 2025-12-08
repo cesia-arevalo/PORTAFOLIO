@@ -34,6 +34,8 @@ const labelMessage = document.getElementById('label-message');
 const btnSubmit = document.getElementById('btn-submit');
 
 const copyrightText = document.getElementById('copyright-text');
+
+const recognitionTitle = document.getElementById('recognition-title');
     
 function toggleLanguage() {
     
@@ -96,6 +98,8 @@ function toggleLanguage() {
         if (aboutTitle) aboutTitle.textContent = "About Me";
         if (aboutText) aboutText.textContent = "I am a student of Computer Systems and Network Engineering at Gerardo Barrios University (UGB) in Usulután. I am passionate about technology and lifelong learning, with a special interest in computer maintenance. I am always looking to learn and contribute practical and innovative solutions.";
         if (btnCvText) btnCvText.textContent = "Download Resume";
+
+        if (recognitionTitle) recognitionTitle.textContent = "Recognitions";
         
         
         if (skillsTitle) skillsTitle.textContent = 'My Skills';
@@ -173,6 +177,8 @@ function toggleLanguage() {
         if (aboutTitle) aboutTitle.textContent = "Sobre mí";
         if (aboutText) aboutText.textContent = "Soy estudiante de la carrera de Técnico en Ingeniería en Sistemas y Redes Informáticas de la Universidad Gerardo Barrios (UGB) Usulután. Me apasiona la tecnología y el aprendizaje continuo, con especial interés en el mantenimiento de computadoras, siempre buscando aprender y aportar soluciones prácticas e innovadoras.";
         if (btnCvText) btnCvText.textContent = "Descargar CV";
+
+        if (recognitionTitle) recognitionTitle.textContent = "Reconocimientos";
         
         
         if (skillsTitle) skillsTitle.textContent = 'Mis Habilidades';

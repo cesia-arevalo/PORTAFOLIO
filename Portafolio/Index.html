@@ -51,6 +51,16 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
             </div>
         </section>
 
+        <div class="card recognition-card">
+            <h2 id="recognition-title">Reconocimientos</h2>
+            <div class="recognition-grid">
+                    <img src="Certificado.jpeg" alt="Diploma 1" class="recognition-img">
+                </a>
+                    <img src="Diploma.jpeg" alt="Diploma 2" class="recognition-img">
+                </a>
+            </div>
+        </div>
+
         <section id="habilidades" class="section">
             <div class="card">
                 <h2 id="skills-title-cont">Mis Habilidades</h2>
@@ -107,9 +117,14 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
                                 <span class="tech-tag" id="project-compu1-tech-css">CSS</span>
                                 <span class="tech-tag" id="project-compu1-tech-canva">Canva</span>
                             </div>
+                            <div class="project-links">
+                                <a href="https://github.com/marlon-cruz/proyecto" target="_blank" class="github-link">
+                                    <i class="fab fa-github"></i> 
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-item">
                         <img src="imagen 2.jpeg" alt="Imagen del Proyecto Farmacia Divino Niño" class="project-image">
                         <h3 class="project-name" id="project-case1-name">Denuncia Ciudadana</h3>
@@ -129,6 +144,11 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
                                 <span class="tech-tag" id="project-case1-tech-java">Java</span>
                                 <span class="tech-tag" id="project-case1-tech-xml">XML</span>
                                 <span class="tech-tag" id="project-case1-tech-sqlite">.SQLite</span>
+                                </div>
+                            <div class="project-links">
+                                <a href="https://github.com/david27c/Denuncia-Ciudadana.git" target="_blank" class="github-link">
+                                    <i class="fab fa-github"></i> 
+                                </a>
                                 
                             </div>
                         </div>
@@ -153,6 +173,14 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
             <span class="tech-tag" id="project-bookmood-tech-javascript">JavaScript</span>
             <span class="tech-tag" id="project-bookmood-tech-html">HTML</span>
             <span class="tech-tag" id="project-bookmood-tech-css">CSS</span>
+            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/criss11-crypt/BookMood-2025.git" target="_blank" class="github-link">
+                                    <i class="fab fa-github"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
 </div>
@@ -162,7 +190,7 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
     <section id="contacto" class="section">
         <div class="card contact-card">
             <h2 id="contact-title">Contacto</h2>
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/mrbnlwwq" method="POST">
                 <label for="name" id="label-name">Nombre</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -171,6 +199,7 @@ By replacing the script with the link CSS, you activate la librería Font Awesom
                 
                 <label for="message" id="label-message">Mensaje</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
+                <input type="hidden" name="_next" value="URL_DE_TU_PORTAFOLIO/#contacto">
                 
                 <button type="submit" class="submit-button" id="btn-submit">Enviar Mensaje</button>
             </form>
