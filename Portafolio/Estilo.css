@@ -376,12 +376,11 @@ footer {
 }
 
 #contact-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #4CAF50; 
     text-align: center;
     margin-bottom: 2rem;
-    text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
 }
 
 .contact-form {
@@ -410,6 +409,7 @@ footer {
     background-color: #FFFFFF; 
     color: #000000;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif; /* Asegura que se use Poppins */
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
     transition: border-color 0.3s ease;
     resize: vertical; 
@@ -456,7 +456,7 @@ footer {
 
 #recognition-title {
     color: #4CAF50; 
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 

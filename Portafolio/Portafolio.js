@@ -143,6 +143,10 @@ function toggleLanguage() {
         
         // --- Proyectos ---
         if (projectsTitle) projectsTitle.textContent = 'Projects';
+
+        if (projectCompu1Name) projectCompu1Name.textContent = 'Software for Divino Niño Pharmacy';
+        if (projectCase1Name) projectCase1Name.textContent = 'Citizen Complaint';
+        if (projectBookmoodName) projectBookmoodName.textContent = 'BOOKMOOD';
         
         if (projectCompu1DescTitle) projectCompu1DescTitle.textContent = 'Description:';
         if (projectCompu1DescText) projectCompu1DescText.textContent = 'Custom software for the company to automate and optimize some tasks carried out by the pharmacy.';
@@ -159,7 +163,7 @@ function toggleLanguage() {
         if (projectBookmoodDescTitle) projectBookmoodDescTitle.textContent = 'Description:';
         if (projectBookmoodDescText) projectBookmoodDescText.textContent = 'BookMood is an e-commerce website designed and created so users can quickly, reliably, and personally search, purchase, and receive books. It offers a simple, secure, and attractive shopping experience.';
         if (projectBookmoodRoleTitle) projectBookmoodRoleTitle.textContent = 'Role:';
-        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = 'Scrum Master and Front end.';
+        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = 'Scrum Master.';
         if (projectBookmoodTechTitle) projectBookmoodTechTitle.textContent = 'Technologies used:';
 
         
@@ -233,6 +237,10 @@ function toggleLanguage() {
         
         // --- Proyectos ---
         if (projectsTitle) projectsTitle.textContent = 'Proyectos';
+
+        if (projectCompu1Name) projectCompu1Name.textContent = 'Software a farmacia Divino Niño';
+        if (projectCase1Name) projectCase1Name.textContent = 'Denuncia Ciudadana';
+        if (projectBookmoodName) projectBookmoodName.textContent = 'BOOKMOOD';
         
         if (projectCompu1DescTitle) projectCompu1DescTitle.textContent = 'Descripción:';
         if (projectCompu1DescText) projectCompu1DescText.textContent = 'Software a la medida para la empresa que automatice y optimice algunas tareas que lleva a cabo la farmacia.';
@@ -249,7 +257,7 @@ function toggleLanguage() {
         if (projectBookmoodDescTitle) projectBookmoodDescTitle.textContent = 'Descripción:';
         if (projectBookmoodDescText) projectBookmoodDescText.textContent = 'BookMood es un sitio web de comercio electrónico (e-commerce) diseñado y creado para que los usuarios puedan buscar, comprar y recibir libros de manera rápida, confiable y personalizada. Ofrece una experiencia de compra sencilla, segura y atractiva.';
         if (projectBookmoodRoleTitle) projectBookmoodRoleTitle.textContent = 'Rol:';
-        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = 'Scrum Master y Front end.';
+        if (projectBookmoodRoleText) projectBookmoodRoleText.textContent = 'Scrum Master.';
         if (projectBookmoodTechTitle) projectBookmoodTechTitle.textContent = 'Tecnologías usadas:';
         
         // --- Testimonios ---
